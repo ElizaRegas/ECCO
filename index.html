@@ -6,19 +6,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Eccentric portfolio - personal website template | Home </title>
+  <title>ECCO</title>
 
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
 
   <!-- Template CSS -->
-  <link rel="stylesheet" href="assets/css/style-liberty.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
 <!-- header -->
-<div class="w3l-header" id="home">
+<div class="l-header" id="home">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark pl-0 pr-0">
             <a class="navbar-brand m-0 text-primary" href="index.html"><span class="fa fa-gamepad"></span> Eccentric </a> 
@@ -77,7 +77,7 @@
 <!-- //header -->
 
 <!-- banner slider -->
-<div class="w3l-banner-slider">
+<div class="l-banner-slider">
     <div class="wrapper-container">
         <!-- Container for all sliders, and pagination -->
         <main class="sliders-container">
@@ -100,8 +100,8 @@
 </div>
 <!-- //banner slider -->
 
-<!-- w3l-content-photo-5 -->
-<div class="w3l-content-photo-5 py-5">
+<!-- l-content-photo-5 -->
+<div class="l-content-photo-5 py-5">
 	<div class="content-main py-lg-5 py-md-3">
 		<div class="container">
 			<div class="row">
@@ -124,10 +124,10 @@
 		</div>
 	</div>
 </div>
-<!-- //w3l-content-photo-5 -->
+<!-- //l-content-photo-5 -->
 
 <!-- gallery-7 -->
-<section class="w3l-gallery-7 bg-light py-5">
+<section class="l-gallery-7 bg-light py-5">
 	<div class="gallery-7_sur py-lg-5">
 		<div class="container">
 			<div id="container">
@@ -169,7 +169,7 @@
 <!-- //gallery-7 -->
 
 <!-- iphone home block -->
-<section class="w3l-blog py-5">
+<section class="l-blog py-5">
     <div class="container py-lg-5">
         <div class="row">
             <div class="col-lg-3 col-6 pr-md-3 pr-2">
@@ -188,9 +188,9 @@
             </div>
             <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
                 <h3>Sed volutpat eget dui ut tempus init bibendum nunc.</h3>
-                <h5 class="mt-3">Fusce fringilla tincidunt laoreet volutpat cras varius sit suscipit.</h5>
+                <h5 class="mt-3">Fusce fringilla tincidunt laoreet volutpat cras letius sit suscipit.</h5>
                 <p class="mt-4 mb-0"> Sed in metus libero. Sed volutpat eget dui ut tempus. Fusce fringilla tincidunt laoreet
-                    Morbi ac metus vitae diam scelerisque malesuada eget eu mauris. Cras varius lorem ac velit pharetra,
+                    Morbi ac metus vitae diam scelerisque malesuada eget eu mauris. Cras letius lorem ac velit pharetra,
                     non scelerisque mi vulputate. Phasellus bibendum suscipit nunc, non semper erat iaculis in. Nulla
                     volutpat porttitor magna vel euismod. Aenean sit amet diam nec sem
                     amet metus.</p>
@@ -202,7 +202,7 @@
 <!-- //iphone home block -->
 
 <!-- testimonial -->
-<section class="w3l-quote-main">
+<section class="l-quote-main">
     <div class="quote py-5">
         <div class="container py-lg-5">
             <div class="row">
@@ -226,14 +226,14 @@
 <!-- //testimonial -->
 
 <!-- home page blog-->
-<section class="w3l-blog py-5 bg-light">
+<section class="l-blog py-5 bg-light">
     <div class="container py-lg-5 py-md-3">
         <div class="row">
             <div class="col-lg-5">
                 <h3>Sed volutpat eget dui ut tempus init.</h3>
-                <h5 class="mt-3">Fusce fringilla tincidunt laoreet volutpat cras varius sit </h5>
+                <h5 class="mt-3">Fusce fringilla tincidunt laoreet volutpat cras letius sit </h5>
                 <p class="mt-4"> Sed in metus libero. Sed volutpat eget dui ut tempus. Fusce fringilla tincidunt laoreet
-                    Morbi ac metus vitae diam scelerisque malesuada eget eu mauris. Cras varius lorem ac velit pharetra,
+                    Morbi ac metus vitae diam scelerisque malesuada eget eu mauris. Cras letius lorem ac velit pharetra,
                     non scelerisque mi vulputate. Phasellus bibendum suscipit nunc, non semper erat iaculis in. Nulla
                     volutpat porttitor magna vel euismod. Aenean sit amet diam nec sem
                     amet metus.</p>
@@ -257,7 +257,7 @@
 <!-- //home page blog-->
 
 <!-- freelance hire me -->
-<section class="w3l-grid-quote py-5">
+<section class="l-grid-quote py-5">
     <div class="container py-lg-3">
         <h6>I'am available for freelance projects.</h6>
         <h3>Let's work together indeed!</h3>
@@ -268,7 +268,7 @@
 <!-- //freelance hire me -->
 
 <!-- Footer -->
-<section class="w3l-footers-1">
+<section class="l-footers-1">
 	<div class="footer bg-secondary">
 		<div class="container">
 			<div class="footer-content">
@@ -301,7 +301,7 @@
 		scrollFunction()
 	};
 
-	function scrollFunction() {
+	const scrollFunction = () => {
 		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 			document.getElementById("movetop").style.display = "block";
 		} else {
@@ -325,11 +325,10 @@
 <script src="assets/js/momentum-slider.min.js"></script>
 <script>
   (function () {
-
-    var slidersContainer = document.querySelector('.sliders-container');
+    let slidersContainer = document.querySelector('.sliders-container');
 
     // Initializing the numbers slider
-    var msNumbers = new MomentumSlider({
+    let msNumbers = new MomentumSlider({
       el: slidersContainer,
       cssClass: 'ms--numbers',
       range: [1, 4],
@@ -348,14 +347,14 @@
 
 
     // Initializing the titles slider
-    var titles = [
+    let titles = [
       'Branding ',
       'Awesome',
       'Creative',
       'Portfolio'
     ];
 
-    var msTitles = new MomentumSlider({
+    let msTitles = new MomentumSlider({
       el: slidersContainer,
       cssClass: 'ms--titles',
       range: [0, 3],
@@ -373,7 +372,7 @@
 
 
     // Initializing the links slider
-    var msLinks = new MomentumSlider({
+    let msLinks = new MomentumSlider({
       el: slidersContainer,
       cssClass: 'ms--links',
       range: [0, 3],
@@ -386,11 +385,11 @@
 
 
     // Get pagination items
-    var pagination = document.querySelector('.pagination');
-    var paginationItems = [].slice.call(pagination.children);
+    let pagination = document.querySelector('.pagination');
+    let paginationItems = [].slice.call(pagination.children);
 
     // Initializing the images slider
-    var msImages = new MomentumSlider({
+    let msImages = new MomentumSlider({
       // Element to append the slider
       el: slidersContainer,
       // CSS class to reference the slider
@@ -425,7 +424,7 @@
     // Select corresponding slider item when a pagination button is clicked
     pagination.addEventListener('click', function (e) {
       if (e.target.matches('.pagination__button')) {
-        var index = paginationItems.indexOf(e.target.parentNode);
+        let index = paginationItems.indexOf(e.target.parentNode);
         msImages.select(index);
       }
     });
